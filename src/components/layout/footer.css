@@ -1,0 +1,35 @@
+
+
+
+  .footer {
+    
+    width: 100%;
+    background-color: rgba(84, 126, 149, 0.7);
+    position: fixed;
+    bottom: 0;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer h1,
+  .footer ul {
+    padding: 1.5rem;
+  }
+
+  .nets-icons {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+  }
+  .nets-icons li {
+    margin-right: 0;
+    padding: 0 0.5rem;
+    font-size: 2.3rem;
+    list-style: none;
+  }
+
+

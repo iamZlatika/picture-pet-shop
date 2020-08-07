@@ -1,0 +1,146 @@
+.nav-mobile-menu {
+  height: auto;
+  width: 3rem;
+  background: transparent;
+  cursor: pointer;
+  padding: 10px auto;
+  vertical-align: middle;
+  border: none;
+  margin-left: 1rem;
+}
+.nav-mobile-menu_bar {
+  width: 100%;
+  display: block;
+  height: 0.2rem;
+  background: #fff;
+  margin: 0.6rem 0;
+  /* z-index: 1110 */
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(84, 126, 149, 0.7);
+  display: block;
+}
+.default-backdrop{
+  position: fixed;
+}
+
+.nav-link {
+  list-style: none;
+  font-size: 3rem;
+  padding: 0 0 2rem 3rem;
+  margin: 0;
+  cursor: pointer;
+}
+.header {
+  padding: 3rem 1rem 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  user-select: none;
+  /* padding-top: 1rem; */
+}
+
+.logo h1 {
+  font-size: 3.5rem;
+  letter-spacing: 0.2em;
+}
+.logo h2 {
+  padding-top: 0.7em;
+  font-size: 1rem;
+  text-align: center;
+  letter-spacing: 0.3em;
+}
+.logo-u {
+  position: inline-block;
+  background-color: #0ba1a1;
+  padding: 0.5em 0 0 0.5em;
+}
+a {
+  text-decoration: none;
+}
+.cart {
+  display: flex;
+  align-items: center;
+  /* padding: 0 2.2rem; */
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.navbar-mobile {
+  position: fixed;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  /* padding-top: 5rem; */
+  transition: all 500ms ease-out;
+  transform: translateX(0);
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 100%;
+  background-color: #155579;
+  z-index: 101;
+}
+
+.navbar {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  height: 100%;
+  top: 0;
+  left: 0;
+  /* width: 55%;
+  height: 100%; */
+  /* margin: 0px; */
+  /* z-index: 100; */
+
+  /* transform: translateX(-100); */
+  position: fixed;
+  transform: translateX(-100%);
+  transition: all 500ms ease-out;
+  opacity: 0;
+}
+
+@media (min-width: 40rem) {
+  .navbar {
+    display: flex;
+    position: static;
+    flex-flow: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    transform: translateX(0);
+    /* width: 100%; */
+    font-size: 2.5rem;
+    opacity: 1;
+    /* justify-content: center; */
+
+    /* padding: 0 0.8rem; */
+  }
+
+  .header {
+    padding-top: 1.5rem;
+    
+  }
+
+  .nav-mobile-menu {
+    display: none;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    cursor: pointer;
+    list-style: none;
+    padding: 0 2rem;
+  }
+}

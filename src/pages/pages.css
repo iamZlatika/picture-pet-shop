@@ -1,0 +1,114 @@
+
+.main-page-nav {
+  display: flex;
+  flex-flow: column;
+}
+
+.main-page-nav-img {
+  display: inline-block;
+  position: relative;
+  height: 50vh;
+  overflow: hidden;
+}
+
+.main-page-nav-img img {
+  height: 100%;
+}
+
+.main-title,
+.main-btn {
+  position: absolute;
+  font-size: 3rem;
+} 
+
+.main-btn {
+  bottom: 15%;
+  left: 15%;
+  padding: 2rem 3rem;
+  border: 2px solid;
+}
+.main-title {
+  bottom: 15%;
+  padding: 2rem 3rem;
+  border: 2px solid;
+}
+
+/* about */
+
+.showcase {
+  background-image: url("../img/mobile-about.png");
+  background-size: cover;
+  background-position: center;
+  /* background-repeat: no-repeat; */
+  height: 75vh;
+  margin: 2rem 0;
+}
+
+.about p {
+  padding: 1rem;
+  line-height: 1.5rem;
+}
+.about h1 {
+  margin: 1rem;
+}
+
+.about-contacts {
+  padding: 0 1rem 1rem 1rem;
+  list-style-type: none;
+  line-height: 1.5rem;
+}
+
+@media (min-width: 40rem) {
+  .main-page-nav {
+    display: flex;
+    flex-flow: row;
+    text-align: center;
+  }
+  
+  .main-page-nav-img {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  /* .main-page-nav-img h2,
+  .main-page-nav-img .nav-btn {
+    position: absolute;
+    font-size: 3rem;
+  } */
+
+  .main-title, .main-btn {
+    bottom: 15%;
+    padding: 2rem 3rem;
+    border: 2px solid;
+  }
+
+  .showcase {
+    background-image: url("../img/dog-and-cat.png");
+    background-size: cover;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    height: 60vh;
+    margin: 2rem 0;
+  }
+
+  .about p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .about h1 {
+    padding: 4rem 0 0 3rem;
+  }
+  .about-contacts {
+    margin: 2rem 0;
+  }
+  .about-contacts li {
+    line-height: 1.5rem;
+    list-style-type: none;
+    font-size: 1.8rem;
+    padding: 0.8rem;
+  }
+}
